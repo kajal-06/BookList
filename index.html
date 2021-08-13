@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- form -->
+  <div class="container">
+    <h1 class="title">Add Book</h1>
+    <form id="book-form">
+      <div>
+        <label for="title">Title</label><br/>
+        <input type="text" id="title">
+      </div>
+      <div>
+        <label for="author">Author</label><br/>
+        <input type="text" id="author">
+      </div>
+      <div>
+        <label for="isbn">ISBN#</label><br/>
+        <input type="text" id="isbn">
+      </div>
+      <div>
+        <input type="submit" value="Submit" name="submit" class="btn">
+      </div>
+    </form>
+
+    <!-- table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+        <tbody id="book-list"></tbody>
+      </thead>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
